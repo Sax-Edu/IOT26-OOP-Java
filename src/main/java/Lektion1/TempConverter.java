@@ -3,6 +3,7 @@ package Lektion1;
 import java.util.Scanner;
 
 public class TempConverter {
+    /*
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -49,9 +50,9 @@ public class TempConverter {
         scanner.close();
     }
 }
+*/
 
-/*
-LÖSNING MED SWITCH
+   // LÖSNING MED SWITCH
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -72,34 +73,28 @@ LÖSNING MED SWITCH
 
         // 3. Omvandla baserat på skala med switch
         switch (skala) {
-            case "C":
+            case "C" -> {
                 celsius = temp;
                 fahrenheit = celsius * 9.0 / 5.0 + 32;
                 kelvin = celsius + 273.15;
                 System.out.printf("%.1f°C motsvarar %.1f°F och %.1fK%n", celsius, fahrenheit, kelvin);
-                break;
-
-            case "F":
+            }
+            case "F" -> {
                 fahrenheit = temp;
                 celsius = (fahrenheit - 32) * 5.0 / 9.0;
                 kelvin = celsius + 273.15;
                 System.out.printf("%.1f°F motsvarar %.1f°C och %.1fK%n", fahrenheit, celsius, kelvin);
-                break;
-
-            case "K":
+            }
+            case "K" -> {
                 kelvin = temp;
                 celsius = kelvin - 273.15;
                 fahrenheit = celsius * 9.0 / 5.0 + 32;
                 System.out.printf("%.1fK motsvarar %.1f°C och %.1f°F%n", kelvin, celsius, fahrenheit);
-                break;
-
-            default:
-                System.out.println("Ogiltig skala! Du måste välja C, F eller K.");
-                break;
+            }
+            default -> System.out.println("Ogiltig skala! Du måste välja C, F eller K.");
         }
 
         scanner.close();
     }
+}
 
-
-*/
