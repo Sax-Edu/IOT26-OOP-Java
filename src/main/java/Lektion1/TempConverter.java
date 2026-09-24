@@ -3,7 +3,7 @@ package Lektion1;
 import java.util.Scanner;
 
 public class TempConverter {
-    /*
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -50,10 +50,11 @@ public class TempConverter {
         scanner.close();
     }
 }
-*/
 
-   // LÖSNING MED SWITCH
+/*
+// LÖSNING MED SWITCH
 
+public class TempConverterSwitch{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -97,4 +98,5 @@ public class TempConverter {
         scanner.close();
     }
 }
+ */
 
