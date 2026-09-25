@@ -13,18 +13,18 @@ public class NumberGuesser {
         int guess;
         int attempts = 0;
 
-        do{
+        do {
             System.out.print("Gissa ett nummer: ");
             guess = scanner.nextInt();
             attempts++;
-            if(guess < secret){
+            if (guess < secret) {
                 System.out.println("För lågt!");
             } else if (guess > secret) {
                 System.out.println("För högt!");
             }
-        } while(guess != secret);
+        } while (guess != secret);
 
-        System.out.println("Rätt! På " +attempts +" gissningar.");
+        System.out.println("Rätt! På " + attempts + " gissningar.");
 
     }
 }

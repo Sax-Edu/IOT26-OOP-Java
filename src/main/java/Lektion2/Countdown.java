@@ -4,8 +4,8 @@ public class Countdown {
 
     public static void main(String[] args) {
 
-        for(int i = 10; i >= 1; i--){
-            System.out.println("T - " +i);
+        for (int i = 10; i >= 1; i--) {
+            System.out.println("T - " + i);
         }
         System.out.println("Liftoff!");
 

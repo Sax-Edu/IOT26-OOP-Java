@@ -10,7 +10,7 @@ public class TextAnalys {
         String putsadTextlower = putsadText.toLowerCase();
 
         System.out.println(putsadTextlower);
-        System.out.println(putsadTextlower +"<- har " +putsadTextlower.length() +" bokstäver.");
+        System.out.println(putsadTextlower + "<- har " + putsadTextlower.length() + " bokstäver.");
 
         System.out.println(putsadTextlower.contains("java"));
 

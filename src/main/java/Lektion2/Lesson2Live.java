@@ -26,13 +26,13 @@ public class Lesson2Live {
 
         boolean running = true;
 
-        while (running){
+        while (running) {
             System.out.println("Inne i menyn");
             System.out.println("1. Hej");
             System.out.println("2. Appgrej");
             System.out.println("skriv quit för att avsluta");
             String input = scanner.nextLine();
-            if(input.equalsIgnoreCase("quit")){
+            if (input.equalsIgnoreCase("quit")) {
                 running = false;
             }
         }
@@ -73,28 +73,25 @@ public class Lesson2Live {
         String modified2 = modStringClean.replace("lkjfd", "MARTIN");
 
 
-        System.out.println(modString + ", längd: " +modString.length());
-        System.out.println(modStringClean + ", längd: " +modStringClean.length());
-        System.out.println(hej +"!");
+        System.out.println(modString + ", längd: " + modString.length());
+        System.out.println(modStringClean + ", längd: " + modStringClean.length());
+        System.out.println(hej + "!");
         System.out.println(modified);
         System.out.println(modified2);
-
-
-
 
 
         System.out.println(test.length());
 
         System.out.println(test.charAt(2));
 
-        if(test.contains("123")){
+        if (test.contains("123")) {
             System.out.println("Funkar!");
         }
-        if(test.equalsIgnoreCase("AbC123")){
+        if (test.equalsIgnoreCase("AbC123")) {
             System.out.println("Japp, det är samma!");
         }
 
-        if(test.length() < 6 ){
+        if (test.length() < 6) {
             System.out.println("Lösenord måste vara minst 6 tecken");
         }
     }
