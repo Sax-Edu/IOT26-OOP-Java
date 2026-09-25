@@ -55,7 +55,10 @@ public class MenuLoop {
                     scan.nextLine();
                     System.out.println("Rätt! På " + attempts + " gissningar.");
                 }
-                case "4" -> running = false;
+                case "4" -> {
+                    System.out.println("Hejdå!");
+                    running = false;
+                }
                 default -> System.out.println("ogiltigt val");
             }
         }
